@@ -1,0 +1,14 @@
+import "typespec-validation";
+using Validation;
+
+@validates(
+  "sexlf::hasMember(\"id\") != null",
+  "Accounts that aren't pending have an account id"
+)
+model Account {
+  balance: uint64;
+  id?: string;
+  state: "pending" | "approved" | "closed";
+  creation_date: zonedDateTime;
+  closed_date: zonedDateTime;
+}

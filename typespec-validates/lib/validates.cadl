@@ -1,0 +1,5 @@
+import "../dist/src/index.js";
+
+namespace Validation;
+
+extern dec validates(target: object, expression: string, message?: string);

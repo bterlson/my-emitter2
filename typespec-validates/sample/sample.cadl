@@ -1,0 +1,33 @@
+import "typespec-validation";
+using Validation;
+
+@validates("balance >= 0", "Balance must be greater than zero")
+@validates(
+  "state == \"pending\" || self::hasMember(\"id\")",
+  "Accounts that aren't pending have an account id"
+)
+@validates("owner.age >= 18", "Owner must be an adult")
+@validates(
+  "closed_date == null || closed_date > creation_date",
+  "creation date must be after closed date"
+)
+model Account {
+  owner: Person;
+  balance: uint64;
+  id?: string;
+  state: "pending" | "approved" | "closed";
+  creation_date: zonedDateTime;
+  closed_date: zonedDateTime;
+}
+
+@validates("accounts::length < 3", "A person can only have 3 accounts")
+@validates(
+  "!self::hasMember(\"address\") || accounts::length == 0",
+  "must have an address to have an account"
+)
+model Person {
+  age: int8;
+  name: string;
+  address?: string;
+  accounts: Account[];
+}
