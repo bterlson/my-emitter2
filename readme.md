@@ -9,6 +9,7 @@
 
 #### Build the world
 
+1. Run pnpm install
 1. Run build on vendor/bundler
 2. Run build on vendor/playground
 3. Run `npx tsc -p .` in typespec-validates (needs build script, whoops)
