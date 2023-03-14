@@ -24,6 +24,7 @@ const config = definePlaygroundViteConfig({
     documentation: "https://microsoft.github.io/cadl",
   },
 });
+config.root = "./";
 console.log("my-playground")
 
 export default config;

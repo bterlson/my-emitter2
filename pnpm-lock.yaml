@@ -32,7 +32,7 @@ importers:
       mocha: ~10.1.0
       mocha-junit-reporter: ~2.2.0
       mocha-multi-reporters: ~1.5.1
-      monaco-editor: ^0.35.0
+      monaco-editor: ~0.34.0
       playwright: ~1.28.1
       prettier: ^2.8.4
       react: ^18.2.0
@@ -53,7 +53,7 @@ importers:
       '@emotion/react': 11.10.6_pmekkgnqduwlme35zpnqhenc34
       '@vitejs/plugin-react': 2.2.0_vite@3.2.5
       es-module-shims: 1.6.3
-      monaco-editor: 0.35.0
+      monaco-editor: 0.34.1
       prettier: 2.8.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -4495,10 +4495,6 @@ packages:
 
   /monaco-editor/0.34.1:
     resolution: {integrity: sha512-FKc80TyiMaruhJKKPz5SpJPIjL+dflGvz4CpuThaPMc94AyN7SeC9HQ8hrvaxX7EyHdJcUY5i4D0gNyJj1vSZQ==}
-    dev: false
-
-  /monaco-editor/0.35.0:
-    resolution: {integrity: sha512-BJfkAZ0EJ7JgrgWzqjfBNP9hPSS8NlfECEDMEIIiozV2UaPq22yeuOjgbd3TwMh3anH0krWZirXZfn8KUSxiOA==}
     dev: false
 
   /ms/2.1.2:
