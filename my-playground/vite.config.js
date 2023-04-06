@@ -1,6 +1,6 @@
-import { definePlaygroundViteConfig } from "../vendor/playground/src/build-utils/index";
+import { definePlaygroundViteConfig } from "../vendor/playground/src/build-utils/index.js";
 
-//import { definePlaygroundViteConfig } from "@cadl-lang/playground/src/build-utils/index.js";
+// import { definePlaygroundViteConfig } from "@cadl-lang/playground/src/build-utils/index.js";
 
 const config = definePlaygroundViteConfig({
   defaultEmitter: "@cadl-lang/openapi3",

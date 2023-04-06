@@ -23,6 +23,7 @@
     "prettier": "^2.8.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "recoil": "~0.7.6",
     "typespec-validation": "workspace:~1.0.0",
     "vite": "^3.2.4"
   },

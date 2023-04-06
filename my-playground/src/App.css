@@ -2,3 +2,28 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.App {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: auto auto 1fr !important;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "emitters"
+    "playground";
+}
+
+.App .playground {
+  grid-area: playground;
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+
+.App .emitters {
+  grid-area: emitters;
+  grid-row: 2;
+  grid-column: 2;
+  border-left: 1px solid #c5c5c5;
+  align-items: center;
+}

@@ -34,9 +34,7 @@ export const StyledPlayground: FunctionComponent<PlaygroundProps> = (props) => (
 );
 
 export const Playground: FunctionComponent<PlaygroundProps> = (props) => (
-  <RecoilRoot>
     <PlaygroundInternal {...props} />
-  </RecoilRoot>
 );
 
 const PlaygroundInternal: FunctionComponent<PlaygroundProps> = ({ host, cadlContent, onSave }) => {
